@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    height: 100vh;
+    text-align: justify;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+img{
+    width:600px;
+    margin: 20px auto;
+    border: 3px solid green;
+}
+
+strong{
+    border-left: 4px solid green;
+    border-bottom: 1px solid green;
+}
