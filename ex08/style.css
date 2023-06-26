@@ -39,6 +39,7 @@ p{
 ul > li{
     text-align: left;
     margin-left: 50px;
+    border-bottom: 2px dotted rgb(244, 150, 150);
 }
 
 a{

@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: url("https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-de-barbeiro-com-ferramentas-conceito-de-trabalho-e-carreira_53876-148092.jpg?w=2000") no-repeat fixed ;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    
+    width: 100vw;
+    height: 100vh;
 }
 
 img{
@@ -15,7 +21,7 @@ img{
 
 div#conteudo{
     width: 600px;
-    height: 100vh;
+    height: 900px;
     background-color: white;
     margin: 0 auto;
     text-align: center;
