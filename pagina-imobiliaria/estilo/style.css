@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #afddfb;
+}
+
+header ul>li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+header ul>li>a {
+    color: #1d1d1d;
+    margin: 0 10px;
+    font-size: 18px;
+
+}
+
+header ul>li>a:hover {
+    color: white;
+
+}
+
+
+.logo {
+    width: 200px;
+    margin-top: 50px;
+    padding-top: 0px;
+}
+
+.secao {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imagem-banner {
+    width: 900px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h2, span, .subtitulo {
+    color: #1c81c0;
+    font-weight: bold;
+}
+
+.imagem-imovel {
+    width: 450px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.textoP1, .textoP3 {
+    width: 980px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.secao-destaque {
+    background-color: #1d80c1;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.textoP2 {
+    width: 700px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+
+.textoP2 span, .textoP4 span {
+    color: rgb(253, 253, 4);
+    font-weight: bold;
+}
+
+.lista li {
+    font-size: 22px;
+    text-align: left;
+    width: 135px;
+    margin: 30px auto;
+    line-height: 42px;
+}
+
+iframe {
+    width: 800px;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.textoP4 {
+    background-color: black;
+    width: 980px;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.links-contato li {
+    margin: 30px auto;
+    width: 210px;
+}
+
+.links-contato li a {
+    background-color: white;
+    color: #1d80c1;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
