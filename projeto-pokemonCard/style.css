@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+   
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.topo , .rodape{
+    background-color: rgb(250, 108, 56);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-capa{
+    width: 100%;
+}
+
+.area{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    min-width: 300px;
+    display: flex;
+}
+
+.info{
+    margin: 30px auto 30px auto;
+}
+
+ h2{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+.info p{
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.card{
+    background-color: rgb(255, 196, 0);
+    width: 320px;
+    height: 380px;
+    margin: 0px 3px 0 0;
+    padding: 20px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    margin: 15px 0;
+}
+
+.card h3{
+    color: white;
+}
+
+.card-sombra{
+    box-shadow: 0px 0px 15px 12px rgb(255, 60, 0) inset;
+}
+
+.informacoes{
+    width: 100%;
+    margin: 12px 0;
+}
+
+li{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+}
+
+.area-image{
+    margin: 0 auto 40px auto;
+    overflow-x: scroll;
+}
+
+.area-image img{
+    width: 315px;
+    margin: 10px;
+}
+
+.image-sombra{
+    box-shadow: 10px 10px 10px #939393;
+}
+
+.info a{
+    color: blue;
+}
+
+footer{
+    padding-top: 10px ;
+}
+
