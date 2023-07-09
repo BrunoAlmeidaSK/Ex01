@@ -44,6 +44,7 @@ h1{
 
 .image-capa{
     width: 100%;
+   
 }
 
 .info{
@@ -64,19 +65,35 @@ h1{
     font-size: 17px;
     width: 100%;
     text-align: justify;
-    margin-bottom: 20px;
+    margin: 12px 0;
+}
+
+
+.image-tv{
+    width: calc(100% - 70px);
+    margin: 0 35px;
 }
 
 .area-image{
-    margin: 0 auto 40px auto;
+    display: flex;
+    margin: 0 auto 20px auto;
     overflow-x: scroll;
 }
 
 .area-image img{
-    width: 315px;
+    width: 320px;
     margin: 10px;
 }
 
 .image-sombra{
     box-shadow: 10px 10px 10px #939393;
+}
+
+.rodape{
+    width: 100%;
+    background-color: rgb(97, 8, 180);
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
 }
