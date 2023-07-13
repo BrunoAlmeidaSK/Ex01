@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.topo {
+    background-color: rgb(146, 123, 101);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 70px;
+}
+
+.links a {
+    color: rgb(180, 131, 96);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 1px 2px 1px black;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.secao-background-capa {
+    background: url('../imagens/parallax-imagem1.png') center no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.texto h2{
+    text-align: center;
+    color: rgb(160, 121, 93);
+    padding: 10px ;
+    margin: 20px auto 10px auto;
+}
+
+.texto p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    margin: 20px 0;
+    padding: 15px 8px;
+}
+
+.parallax-secao1{
+    background: url('../imagens/parallax-imagem2.jpg') center bottom no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-secao1 h3 , .parallax-secao2 h3 {
+    background-color: rgb(107, 82, 64);
+    color: white;
+    width: 300px;
+    text-align: center;
+    padding: 5px 3px;
+}
+
+.parallax-secao2{
+    background: url('../imagens/parallax-imagem3.jpg') center bottom no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-secao3{
+    background: url('../imagens/parallax-imagem4.png') center bottom no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.conteudo h2{
+    background-color:rgb(107, 82, 64) ;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 2px;
+    display: inline-block;
+    margin: 15px 15px 30px 15px;
+}
+
+
+iframe{
+    width: 50%;
+    height: 250px;
+}
+
+.conteudo-texto{
+    margin: 30px 15px 30px 15px;
+    
+}
+
+.conteudo-texto p{
+    background-color: rgb(107, 82, 64);
+    color: white;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    padding: 10px 20px ;
+    margin: 0px auto;
+}
+
+.parallax-secao4{
+    background: url('../imagens/cafeteria.jpg') top center no-repeat fixed;
+    background-size: cover;
+    height: 70vh;
+   
+}
+
+#horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titulo-horario{
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.dias , .times{
+    list-style: none;
+}
+
+.dias li, .times li{
+    width: 120px;
+    text-align: center;
+    margin: 20px 0px; 
+    box-sizing: border-box;   
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    line-height: 20px;
+}
+
+span{
+    color: goldenrod;
+}
