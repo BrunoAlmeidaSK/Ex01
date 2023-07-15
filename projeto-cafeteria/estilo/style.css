@@ -1,14 +1,27 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body, html {
     width: 100vw;
     height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .topo {
@@ -25,7 +38,7 @@ body, html {
 
 .links a {
     color: rgb(180, 131, 96);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Oswald', sans-serif;;
     font-size: 18px;
     font-weight: 600;
     text-shadow: 1px 2px 1px black;
@@ -49,8 +62,9 @@ body, html {
 
 h1 {
     width: 100%;
+    font-family: 'Fraunces', serif;
+    font-size: 70px;
     position: absolute;
-    font-size: 60px;
     color: white;
     display: flex;
     justify-content: center;
@@ -64,6 +78,7 @@ h1 {
 }
 
 .texto h2{
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     color: rgb(160, 121, 93);
     padding: 10px ;
@@ -72,8 +87,8 @@ h1 {
 
 .texto p {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
     font-size: 17px;
     line-height: 28px;
     margin: 20px 0;
@@ -93,6 +108,7 @@ h1 {
 .parallax-secao1 h3 , .parallax-secao2 h3 {
     background-color: rgb(107, 82, 64);
     color: white;
+    font-family: 'Fraunces', serif;
     width: 300px;
     text-align: center;
     padding: 5px 3px;
@@ -118,6 +134,8 @@ h1 {
 .conteudo h2{
     background-color:rgb(107, 82, 64) ;
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
     width: 100%;
     max-width: 300px;
     padding: 5px 2px;
@@ -139,6 +157,8 @@ iframe{
 .conteudo-texto p{
     background-color: rgb(107, 82, 64);
     color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 2px black;
     width: 100%;
     max-width: 350px;
     height: 100%;
@@ -162,6 +182,8 @@ iframe{
 
 .titulo-horario{
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     text-align: center;
     padding: 30px 0;
 }
@@ -188,3 +210,11 @@ footer{
 span{
     color: goldenrod;
 }
+
+.material-icons{
+    background-color: rgb(180, 131, 96);
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
