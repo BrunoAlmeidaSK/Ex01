@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body, html {
@@ -18,42 +18,55 @@ body, html {
     height: 100vh;
 }
 
-header{
+.secao{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
     width: 100%;
     position: fixed;
     z-index: 1;
-}
-
-.topo {
     background-color: rgb(146, 123, 101);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.logo {
-    width: 60px;
-    height: 70px;
+
+.topo img {
+    width: 100px;
+    position: relative;
+    left: 15%;
 }
 
-.links a {
-    color: rgb(180, 131, 96);
-    font-family:'Oswald', sans-serif;;
+.topo nav {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.topo nav a {
+    margin-right: 20px;
     font-size: 18px;
-    font-weight: 600;
-    text-shadow: 1px 2px 1px black;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    text-align: none;
     text-decoration: none;
-    padding: 0 15px;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px;
+
+    color: #c4a47c;
+
 }
 
-.links a:hover {
+.topo nav a:hover{
     color: white;
 }
+
+/* secao parallax-capa */
 
 .secao-background-capa {
     background: url('../imagens/parallax-imagem1.png') center no-repeat fixed;
     background-size: cover;
-    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -61,160 +74,237 @@ header{
 }
 
 h1 {
-    width: 100%;
-    font-family: 'Fraunces', serif;
-    font-size: 70px;
+    top: 45%;
+    right: 0;
+    left: 0;
     position: absolute;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secao {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.texto h2{
-    font-family: 'Oswald', sans-serif;
     text-align: center;
-    color: rgb(160, 121, 93);
-    padding: 10px ;
-    margin: 20px auto 10px auto;
+    font-weight: 400;
+    font-family: "Fraunces", sans-serif;
+    font-size: 100px;
 }
 
-.texto p {
+/* secao parallax-2 e 3 */
+
+.parallax-secao1 h3, .parallax-secao2 h3 {
+    width: 500px;
+    padding: 10px;
+
+    position: relative;
+    top: 45%;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Fraunces", sans-serif;
     text-align: center;
-    font-family: 'Fraunces', serif;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 28px;
-    margin: 20px 0;
-    padding: 15px 8px;
+
+    letter-spacing: 2px;
+    background-color: #604829;
+    color: white;
 }
 
-.parallax-secao1{
+/* seçao parallax */
+
+.parallax-secao1 {
     background: url('../imagens/parallax-imagem2.jpg') center bottom no-repeat fixed;
     background-size: cover;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 
-.parallax-secao1 h3 , .parallax-secao2 h3 {
-    background-color: rgb(107, 82, 64);
-    color: white;
-    font-family: 'Fraunces', serif;
-    width: 300px;
-    text-align: center;
-    padding: 5px 3px;
-}
-
-.parallax-secao2{
+.parallax-secao2 {
     background: url('../imagens/parallax-imagem3.jpg') center bottom no-repeat fixed;
     background-size: cover;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
 }
 
-.parallax-secao3{
-    background: url('../imagens/parallax-imagem4.png') center bottom no-repeat fixed;
+/* efeitos da classe container-texto */
+.container-texto {
+    padding: 80px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+}
+
+.container-texto h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    color: #c4a47c;
+}
+
+.container-texto p {
+    max-width: 1024px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+
+
+/* seçao parallax 3 */
+
+.parallax-secao3 {
+    position: relative;
+    background: url('../imagens/parallax-imagem4.png') center fixed;
     background-size: cover;
     height: 100vh;
-    text-align: center;
 }
 
-.conteudo h2{
-    background-color:rgb(107, 82, 64) ;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    width: 100%;
-    max-width: 300px;
-    padding: 5px 2px;
-    display: inline-block;
-    margin: 15px 15px 30px 15px;
-}
-
-
-iframe{
-    width: 50%;
-    height: 250px;
-}
-
-.conteudo-texto{
-    margin: 30px 15px 30px 15px;
+.parallax-secao3 h2 {
+    width: 500px;
+    padding: 10px;
     
-}
+    position: relative;
+    top: 10%;
+    right: 0;
+    left: 0;
 
-.conteudo-texto p{
-    background-color: rgb(107, 82, 64);
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 2px 2px 2px black;
-    width: 100%;
-    max-width: 350px;
-    height: 100%;
-    padding: 10px 20px ;
-    margin: 0px auto;
-}
+    margin: auto;
 
-.parallax-secao4{
-    background: url('../imagens/cafeteria.jpg') top center no-repeat fixed;
-    background-size: cover;
-    height: 70vh;
-   
-}
-
-#horario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.titulo-horario{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-size: 24px;
+    font-family: "Oswald", serif;
+    letter-spacing: 5px;
     text-align: center;
-    padding: 30px 0;
+
+    color: white;
+    background-color: #604829;
 }
 
-.dias , .times{
+.parallax-secao3 iframe {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.container-contatos {
+    width: 500px;
+    padding: 10px;
+    position: absolute;
+    bottom: 9%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #604829;
+}
+
+.container-contatos p {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    line-height: 36px;
+    text-shadow: 0px 6px 8px black;
+    text-align: center;
+}
+
+/* Seçao parallax 4 */
+
+.parallax-secao4 {
+    position: relative;
+    background: url('../imagens/cafeteria.jpg') center fixed;
+    background-size: cover;
+    height: 85vh;
+}
+
+.parallax-secao4 h2 {
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+    right: 0;
+    left: 0;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.lista-horarios {
+    max-width: 768px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    font-family: "Oswald", sans-serif;
     list-style: none;
 }
 
-.dias li, .times li{
-    width: 120px;
-    text-align: center;
-    margin: 20px 0px; 
-    box-sizing: border-box;   
+.lista-horarios li {
+    position: relative;
 }
 
-footer{
+.lista-horarios li h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.lista-horarios li div {
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background-color: #acacac;
+}
+
+.lista-horarios li p, .texto-marrom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.texto-marrom {
+    color: #c4a47c;
+}
+
+.lista-horarios li p {
+    color: #acacac;
+}
+
+.rodape{
+    position: relative;
+    padding: 20px 0;
+    line-height: 34px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    text-align: center;
     background-color: black;
     color: white;
-    text-align: center;
-    padding: 15px;
-    line-height: 20px;
 }
 
-span{
-    color: goldenrod;
+.rodape span{
+    color: #c4a47c;
 }
 
-.material-icons{
-    background-color: rgb(180, 131, 96);
-    color: white;
-    font-size: 35px;
-    padding: 10px;
-}
+.rodape a{
+    background-color: black;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
 
+    background: url('../imagens/seta-para-cima.png') center;
+    background-size: cover;
+    background-color: #c4a47c;
+    border-radius: 4px;
+
+}
