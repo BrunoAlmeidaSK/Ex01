@@ -19,13 +19,14 @@ body, html {
 .topo {
     background-color: white;
     width: 100%;
-    max-width: 1024px;
+
     display: flex;
     padding: 35px 0;
+    
 }
 
 .titulo-topo {
-    border: 5px solid;
+    
     position: relative;
     width: 100%;
     max-width: 400px;
@@ -62,7 +63,6 @@ body, html {
 /* seção links */
 
 .links {
-    border: 5px solid;
     margin: auto;
 }
 
@@ -278,9 +278,11 @@ span{
 .secao-tabela-preco{
    width: 100%;
    
+   background-color: #f6f6f6;
 }
 
 .secao-tabela-preco h2{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0 auto 50px auto;
     padding: 20px 0;
@@ -304,7 +306,7 @@ table{
 }
 
 thead th{
-    border: 5px solid rgb(0, 255, 191);
+    font-family: 'Poppins', sans-serif;
     padding: 10px 0;
     font-size: 18px;
     
@@ -330,18 +332,59 @@ tbody > tr:nth-child(odd){
 
 /* Seção rodape */
 
-.rodape{
+.secao-rodape{
     width: 100%;
     padding:100px ;
     margin:10px auto;
-    border: 5px solid;
+    
     
 }
 
 .titulo-rodape{
-    border: 5px solid red;
-    width: 320px;
+    
+    width: 350px;
     margin: 0 auto;
-    display: flex;
+    position: relative;
+}
+
+
+.titulo-rodape h1{
+    position: absolute;
+    top: 10%;
+    left: 160px;
+}
+.titulo-rodape p{
+    position:absolute;
+    bottom: 40%;
+    left: 160px;
+
+    font-weight: 600;
+    color: #2f86d6;
+}
+
+.contato-rodape {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    
+    text-align: center;
+    margin: 40px 0 -20px 0;
+    
+}
+
+
+.rodape{
+    
+    background-color: #f6f6f6;
+    color: #223032;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    width: 100%;
+    
+    padding: 15px;
+
+
 }
 
