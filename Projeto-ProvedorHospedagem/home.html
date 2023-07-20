@@ -16,34 +16,36 @@
     <main>
         <!-- Seção topo da página -->
         <header>
-            <div class="topo">
+            <div class="topo limitar-secao">
                 <div class="titulo-topo">
                     <img src="assets/logo-icone.png" alt="" class="logo">
-                    <h1>AlfaTech</h1>
-                    <p>Soluções em Hospedagem</p>
+                    <div>
+                        <h1>AlfaTech</h1>
+                        <p>Soluções em Hospedagem</p>
+                    </div>
+
+
+                    <nav class="links">
+                        <a href="#informacoes">INFORMAÇÕES</a>
+                        <a href="#planos">PLANOS</a>
+                        <a href="tabela-preco.html" target="_blank">PREÇOS</a>
+                        <a href="#contato">CONTATO</a>
+                    </nav>
                 </div>
-                <nav class="links">
-                    <a href="#informacoes">INFORMAÇÕES</a>
-                    <a href="#planos">PLANOS</a>
-                    <a href="#precos">PREÇOS</a>
-                    <a href="#contato">CONTATO</a>
-                </nav>
-            </div>
         </header>
         <!-- Seção conteudo -->
         <section class="secao-texto-banner">
 
-            <div class="secao-texto">
-                <p>Simples - Fácil de usar - 10x mais rápido</p>
-                <h2>O melhor serviço de hospedagem na web para o seu site</h2>
-                <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua
-                    hospedagem
-                </p>
-            </div>
-            <div class="secao-img">
+            <div class="secao-texto limitar-secao">
+                <div>
+                    <p>Simples - Fácil de usar - 10x mais rápido</p>
+                    <h2>O melhor serviço de hospedagem na web para o seu site</h2>
+                    <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua
+                        hospedagem
+                    </p>
+                </div>
                 <img src="assets/imagem-banner.png" alt="Banner">
             </div>
-
         </section>
         <section class="secao-primeiro-anuncio">
 
@@ -52,11 +54,12 @@
                 <p>Também temos planos gratuitos. Adquira já o seu.</p>
             </div>
             <div class="conteudo-link">
-                <a href="#tabela-preco.html"><img src="assets/icone-foguete.png" alt="foguete"> TABELA DE PREÇOS</a>
+                <a href="tabela-preco.html" target="_blank"><img src="assets/icone-foguete.png" alt="foguete"> TABELA DE
+                    PREÇOS</a>
             </div>
 
         </section>
-        <section class="secao-informacoes">
+        <section class="secao-informacoes" id="informacoes">
             <h2>Existem diversos serviços de hospedagem de sites. <br> Porque você deve <span>nos escolher?</span></h2>
 
             <div class="container">
@@ -78,7 +81,7 @@
             </div>
         </section>
 
-        <section class="secao-tabela-preco">
+        <section class="secao-tabela-preco" id="planos">
             <h2>Pague <span>somente</span> pelo que for usar. Sem cobranças adicionais!</h2>
             <table>
                 <thead>
@@ -142,7 +145,7 @@
                 <p>Seja um deles você também!</p>
             </div>
             <div class="conteudo-link-segundo">
-                <a href="#tabela-preco.html"><img src="assets/icone-foguete.png" alt="foguete"> TABELA DE PREÇOS</a>
+                <a href="tabela-preco.html"><img src="assets/icone-foguete.png" alt="foguete"> TABELA DE PREÇOS</a>
             </div>
         </section>
 
@@ -152,12 +155,12 @@
                 <h1>AlfaTech</h1>
                 <p>Soluções em hospedagem</p>
             </div>
-            
-            <div class="contato-rodape">
+
+            <div class="contato-rodape" id="contato">
                 <p>Telefone & Whatsapp: (21) 99999-5555</p>
                 <p>E-mail: suporte@alfatech.com</p>
                 <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
-                
+
             </div>
 
         </section>
