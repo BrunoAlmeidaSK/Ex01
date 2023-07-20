@@ -321,59 +321,44 @@ tbody>tr:nth-child(odd) {
 
 /* Seção rodape */
 
-.secao-rodape {
-    width: 100%;
-    padding: 100px;
-    margin: 10px auto;
-
-
-}
-
-.titulo-rodape {
-
-    width: 350px;
-    margin: 0 auto;
+/* Rodapé */
+.rodape-logo {
+    width: 320px;
     position: relative;
+    margin: 70px auto 40px;
 }
 
-
-.titulo-rodape h1 {
-    position: absolute;
-    top: 10%;
-    left: 160px;
+.rodape-logo img {
+    width: 80px;
 }
 
-.titulo-rodape p {
+.rodape-logo div {
     position: absolute;
-    bottom: 40%;
-    left: 160px;
+    left: 95px;
+    top: 0;
+}
 
-    font-weight: 600;
+.rodape-logo p {
     color: #2f86d6;
-}
-
-.contato-rodape {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    line-height: 32px;
-
-    text-align: center;
-    margin: 40px 0 -20px 0;
-
 }
 
-
-.rodape {
-
-    background-color: #f6f6f6;
-    color: #223032;
+.container-contatos {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
 
-    width: 100%;
+.container-copyright {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #f1f3f7;
+}
 
-    padding: 15px;
-
-
+.container-copyright span {
+    color: #2f86d6;
 }
