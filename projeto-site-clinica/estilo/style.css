@@ -1,111 +1,227 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.secao-limite{
+.secao-limite {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.topo{
+.topo {
     background-color: rgb(1, 181, 236);
-   
+
 }
 
-.logo{
+.logo {
     position: relative;
     top: 15px;
     left: 0;
 }
 
-img{
+img {
     width: 150px;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    bottom: 40px;  
+    bottom: 40px;
 }
 
-nav a{
+nav a {
     font-size: 22px;
     color: white;
     text-decoration: none;
     margin: 0 15px;
 }
 
-.secao-banner{
-    background: url("../imagens/recepcao.png") no-repeat bottom center ;
+nav a:hover{
+    color: aqua;
+}
+
+.secao-banner {
+    background: url("../imagens/recepcao.png") no-repeat bottom center;
     background-size: cover;
     height: 50vh;
     position: relative;
 }
 
-.secao-texto{
-   display: flex;
-   justify-content: start;
+
+
+.secao-texto {
+    position: relative;
+    padding: 180px 0;
 }
 
-.secao-texto h1{
+.secao-texto h1 {
     position: absolute;
     top: 38%;
     right: 0;
     left: 0;
-   
+
     color: white;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 40px;
 
     padding: 10px 0;
 }
 
-.secao-sobre{
-    border: 2px solid;
-    margin: 25px auto;
+/* seção do conteudo sobre */
+
+
+.secao-sobre {
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para a imagem médico */
+.conteudo-sobre img {
+
+    max-width: 50%;
+    position: relative;
+    top: 60px;
+    left: 30%;
+}
+
+.conteudo-sobre h2, h3, p, li {
+    color: gray;
+}
+
+/* estilos de titulo compartilhado seção sobre e especialistas */
+.secao-especialistas h2 , .secao-contato h2 {
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-size: 22px;
+    margin: 25px 0;
+}
+
+
+.conteudo-sobre h2 {
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+.conteudo-sobre p , .secao-especialistas p {
+
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    min-width: 469px;
+    margin: 20px auto;
+
+}
+
+/* Estilos para a lista */
+.lista {
+    flex: 1;
+    margin-left: 20px;
+    width: 400px;
+    position: relative;
+    bottom: 120px;
+    left: 45%;
+
+}
+
+/* Estilos para o título da lista */
+.lista h3 {
+    margin: 20px 0;
+
+}
+
+/* secao dos cards */
+.secao-especialistas {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.cards {
+    display: flex;
+    margin: 0 auto 20px auto;
+}
+
+.cards img {
+    width: 320px;
+    margin: 10px;
+}
+
+.card1, .card2, .card3 {
+    box-shadow: 5px 5px 20px gray;
+}
+
+.link-horario{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.conteudo-sobre{
-    position: relative;
-    padding: 180px 0 ;
-    border: 2px solid;
+.link-horario a{
+    background-color: rgb(1, 189, 189);
+    padding: 15px;
+    margin: 20px auto;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.conteudo-sobre div{
-    width: 600px;
+/* seção contatos */
+
+.secao-contato{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.conteudo-sobre h2{
-    margin-bottom: 12px;
+.secao-contato p{
+    font-size: 19px;
+    line-height: 25px;
     text-align: center;
-    color: rgb(100, 100, 100);
+    min-width: 469px;
+    margin: 20px auto;
 }
 
-.conteudo-sobre p{
-    font-size: 17px;
-    line-height: 22px;
-    word-spacing: 2px;
+article{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.secao-sobre img{
-    border: 2px solid gray;
-    position: absolute;
-    top: 100px;
-    left: 0;
+
+/* seção rodape */
+
+.rodape{
+    width: 100%;
+    margin: 25px auto 0 auto;
+    background-color: rgb(4, 122, 143);
+    display: inline-block;
+    text-align: center;
 }
 
-.secao-sobre ul{
-    border: 2px solid green;
-    position: absolute;
-    top: 130px;
-    right: 0;
+.rodape p{
+    color: #ffffffc9;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    min-width: 469px;
+    margin: 20px auto;
 }
