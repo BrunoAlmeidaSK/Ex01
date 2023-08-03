@@ -16,28 +16,36 @@
 }
 
 .topo {
-    position: relative;
-    padding: 35px 0;
-
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.titulo-topo {
-    position: relative;
+.titulo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titulo-topo img {
+.container-imagem{
     width: 80px;
 }
 
-.titulo-topo div {
-    position: absolute;
-    top: 0;
-    left: 95px;
+.container-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-logo div {
+
     font-family: 'Poppins', sans-serif;
 
 }
 
-.titulo-topo p {
+.titulo-logo p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #2f86d6;
@@ -47,9 +55,9 @@
 /* seção links */
 
 .links {
-    position: absolute;
-    top: 35px;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links a {
@@ -66,60 +74,37 @@
 }
 
 /* seção home-banner */
-
+    
 
 .secao-texto-banner {
     background-color: #2f86d6;
-    /* width: 100%;
+    width: 100%;
+    padding: 10px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center; */
-
 }
 
-/* .secao-img {
-    flex: 1 0 300px;
-    text-align: center;
+
+
+.texto-banner p, h2{
+    color: white;
+    padding: 10px 0;
 }
 
-.secao-img img {
-    width: 50%;
-    height: auto;
-    
-} */
-
-.secao-texto {
-    position: relative;
-    padding: 180px 0;
-
+.container-banner-img{
+    width: 400px;
 }
 
-.secao-texto div {
-    color: #f6f6f6;
-    width: 470px;
-
+.container-banner-img img{
+    width: 100%;
+    height: 100%;
 }
 
-.secao-texto div p {
-    font-size: 16px;
-    line-height: 26px;
-    word-spacing: 3px;
 
-}
 
-.secao-texto div h2 {
-    font-size: 28px;
-    line-height: 40px;
-    margin: 20px 0px;
 
-}
 
-.secao-texto img {
-    width: 50%;
-    position: absolute;
-    top: 100px;
-    right: 0;
-}
 
 /* @media screen and (max-width:768px) {
     .secao-texto-banner {
