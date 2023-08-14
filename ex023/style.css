@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.cabecalho , footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+}
+
+
+img:first-child{
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.limite-secao{
+    max-width: 1024px;
+
+    line-height: 22px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.quem-somos p::first-letter{
+    font-size: 28px;
+}
+
+.quem-somos p:last-child{
+    background-color: orange;
+    display: inline;
+    padding: 5px;
+}
+
+.secao-rede-sociais{
+    display: block;
+    border-left: 2px solid orangered;
+    padding-left: 5px;
+    margin: 15px auto;
+
+    font-weight: bold;
+}
+
+.jogos-avaliados{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    margin: 25px 0;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+
+}
+
+figcaption, figure span{
+    margin: 12px 0;
+    padding: 12px 5px;
+    text-align: center;
+    background-color: #ed5a0e;
+}
+
+.jogos-avaliados img{
+    width: 350px;
+}
+
