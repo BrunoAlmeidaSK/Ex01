@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.limite-secao{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topo{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.726);
+    font-weight: 500;
+}
+
+.logo span{
+    color: rgba(0, 89, 255, 0.596);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.479);
+    text-decoration: none;
+    margin: 20px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav li{
+    list-style: none;
+}
+
+.img-banner{
+    
+    background: url("../assets/img-fundo.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-banner{
+    background-color: rgba(0, 128, 96, 0.548);
+    color: white;
+    border: 1px solid white;
+    width: 570px;
+    height: 200px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-banner h1 {
+    font-size: 52px;
+}
+
+.texto-banner p{
+    margin-top: 32px;
+    font-size: 30px;
+}
+
+.destaque-quartos{
+    margin: 0 auto;
+    padding: 22px;
+    display: block;
+}
+
+.destaque-quartos h2{
+    text-align: center;
+    padding: 15px 0;
+    opacity: 0.6;
+}
+
+.destaque-quartos p{
+    text-align: center;
+    font-size: 19px;
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.cards img{
+    width: 100%;
+}
+
+figure{
+    border-bottom: 3px solid rgb(0, 160, 209);
+    width: 320px;
+}
+
+figcaption{
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
