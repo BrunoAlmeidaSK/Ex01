@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
     <link rel="stylesheet" href="estilo/pag-principal.css">
     <title>Pousada Secreta</title>
 </head>
@@ -11,13 +13,13 @@
 <body>
     <header class="topo limite-secao">
         <div class="logo">
-            <a href="#banner-inicio">Pousada <span>Secreta</span></a>
+            <a href="home.html">Pousada<span>Secreta</span></a>
         </div>
 
         <nav>
             <li><a href="#sobre">SOBRE</a></li>
             <li><a href="#rota">ROTA</a></li>
-            <li><a href="#quartos">QUARTOS</a></li>
+            <li><a href="pag-quartos.html" target="_blank">QUARTOS</a></li>
         </nav>
 
     </header>
@@ -41,15 +43,15 @@
             <div class="cards">
                 <figure>
                     <img src="assets/quarto-solteiro1.jpg" alt="">
-                    <figcaption>QUARTO DE SOLTEIRO</figcaption>
+                    <figcaption><a href="">QUARTO DE SOLTEIRO</a></figcaption>
                 </figure>
                 <figure>
                     <img src="assets/quarto-casal1.jpg" alt="">
-                    <figcaption>QUARTO DE CASAL</figcaption>
+                    <figcaption><a href="">QUARTO DE CASAL</a></figcaption>
                 </figure>
                 <figure>
                     <img src="assets/quarto-familia1.jpg" alt="">
-                    <figcaption>QUARTO FAMÍLIA</figcaption>
+                    <figcaption><a href="">QUARTO FAMÍLIA</a></figcaption>
                 </figure>
             </div>
         </section>
@@ -69,61 +71,79 @@
 
         <section class="sobre-pousada limite-secao" id="sobre">
 
-            <h2>SOBRE A POUSADA</h2>
+            <h2>SOBRE A POUSADA!</h2>
             <p class="texto">Conheça um pouco sobre a nossa Pousada</p>
 
-            <div class="cards-sobre">
-                <figure>
-                    <figcaption>
+
+            <div class="secao-card">
+
+                <div class="card">
+                    <div class="card-texto">
                         <h3>A Pousada</h3>
                         <p>A Pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar</p>
-                    </figcaption>
-
+                    </div>
                     <img src="assets/img1.jpg" alt="imagem da pousada">
-                </figure>
+                </div>
 
-                <figure>
-                    <figcaption>
+
+                <div class="card">
+                    <div class="card-texto">
                         <h3>Alimentação</h3>
                         <p>A Pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam
                             24hrs.</p>
-                    </figcaption>
-
+                    </div>
                     <img src="assets/img3.jpg" alt="imagem de alimentos">
-                </figure>
-            </div>
+                </div>
 
-            <div class="cards-sobre">
-                <figure>
-                    <figcaption>
+                <div class="card">
+                    <div class="card-texto">
                         <h3>Nossos quartos</h3>
                         <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições.Além
                             disso, as
                             unidades da Pousada Dev contam com ar-condicionado e quarda-roupa.</p>
-                    </figcaption>
+                    </div>
                     <img src="assets/img2.jpg" alt="imagem dos quartos">
-                </figure>
-                <figure class="info-sobre">
-                    <figcaption>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-texto">
                         <h3>Recepção</h3>
                         <p>Nossa recepção fica aberta 24hrs.</p>
-                    </figcaption>
+                    </div>
                     <img src="assets/img5.jpg" alt="imagem recepção">
-                </figure>
+                </div>
             </div>
-
-
         </section>
     </main>
 
-    <!-- <footer class="limite-secao">
-        <div>
-            <h3>Entre em contato</h3>
-            <p>Endereço 001.000.1001 - Metaverso</p>
-            <p>Cel: 5521000000000</p>
-            <p>Faça sua reserva pelo metaverso.com</p>
-        </div>
-    </footer> -->
+    <footer class="rodape">
+
+        <div class="limite-secao rodape-container">
+            <div class="rodape-info">
+              <h4>Entre em contato conosco:</h4>
+            </div>
+      
+            <a class="rodape-info rodape-link" target="_blank" href="https://goo.gl/maps/wPAS58QxiTopxK6w7">
+              <img class="rodape-icone" src="assets/icones/endereco.png" alt="Ícone endereco" title="Ícone endereco" />
+              <p>Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
+            </a>
+      
+            <div class="rodape-info">
+              <img class="rodape-icone" src="assets/icones/telefone.png" alt="Ícone telefone" title="Ícone telefone" />
+              <p>Cel: 5521000000000</p>
+            </div>
+      
+            <a class="rodape-info rodape-link" target="_blank"
+              href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&">
+              <img class="rodape-icone" src="assets/icones/calendario.png" alt="Ícone calendario" title="Ícone calendario" />
+              <p>Faça sua reserva pelo Booking.com</p>
+            </a>
+      
+            <div class="rodape-copyright">© Copyright - PousadaDev</div>
+          </div>
+    </footer>
 </body>
 
 </html>
