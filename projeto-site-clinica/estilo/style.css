@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+
+ 
+    
 }
 
 
@@ -18,24 +21,26 @@
 /* seção topo */
 .topo {
     background-color: rgb(1, 181, 236);
-
 }
 
-.logo {
-    position: relative;
-    top: 15px;
-    left: 0;
-}
-
-img {
-    width: 150px;
-}
-
-nav {
+.secao-topo {
     display: flex;
-    flex-direction: row-reverse;
-    position: relative;
-    bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 15px;
+}
+
+.logo{
+    width: 150px;
+    margin: 5px 0 15px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 nav a {
@@ -44,10 +49,11 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+
 }
 
 nav a:hover{
-    color: aqua;
+  border-bottom: 2px solid turquoise;
 }
 
 /* seção banner */
@@ -55,57 +61,49 @@ nav a:hover{
 .secao-banner {
     background: url("../imagens/recepcao.png") no-repeat bottom center;
     background-size: cover;
-    height: 50vh;
-    position: relative;
+    height: 50vh; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .secao-texto {
-    position: relative;
-    padding: 180px 0;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+
+    margin: 0 auto;
 }
 
-.secao-texto h1 {
-    position: absolute;
-    top: 35%;
-    right: 0;
-    left: 0;
-
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 40px;
-
-    padding: 10px 0;
+.secao-texto span{
+    font-size: 30px;
 }
 
 /* seção do conteudo sobre */
 
-
-.secao-sobre {
-
+.conteudo-sobre{ 
     width: 100%;
-    max-width: 1024px;
+    padding: 20px 0;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ 
 }
 
 /* Estilos para a imagem médico */
-.conteudo-sobre img {
+.conteudo-sobre-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    max-width: 50%;
-    position: relative;
-    top: 80px;
-    left: 30%;
+.lista{
+    margin-left: 20px;
 }
 
 .conteudo-sobre h2, h3, p, li {
     color: gray;
-    
 }
+
 
 /* estilos de titulo compartilhado seção sobre e especialistas */
 .secao-especialistas h2 , .secao-contato h2 {
@@ -129,63 +127,73 @@ nav a:hover{
     font-size: 19px;
     line-height: 25px;
     text-align: center;
-    min-width: 469px;
     margin: 20px auto;
-
-}
-
-/* Estilos para a lista */
-.lista {
-    font-size: 18px;
-    flex: 1;
-    margin-left: 20px;
-    width: 400px;
-    position: relative;
-    bottom: 120px;
-    left: 45%;
-
-}
-
-/* Estilos para o título da lista */
-.lista h3 {
-    margin: 20px 0;
 
 }
 
 /* secao dos cards */
 .secao-especialistas {
     width: 100%;
-    margin: 0 auto;
+    padding: 15px 0;
+    
 }
 
 .cards {
     display: flex;
-    margin: 0 auto 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
 }
 
 .cards img {
-    width: 320px;
-    margin: 10px;
+    width: 100%;
 }
 
-.card1, .card2, .card3 {
+figure{
+    background-color: white;
     box-shadow: 5px 5px 20px gray;
+    width: 320px;
 }
+
+figcaption{
+    text-align: center;
+    padding: 9px 0; 
+}
+
 
 .link-horario{
-    margin: 0 auto;
+    
+    text-align: center;
+    width: 150px;
+    height: 50px;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    margin: 35px auto 0 auto;
 }
 
 .link-horario a{
+    
     background-color: rgb(1, 189, 189);
+    width: 100%;
+
     padding: 15px;
-    margin: 20px auto;
+
+
     color: white;
     text-decoration: none;
     font-weight: bold;
+
+    border-radius: 3px;
+
+}
+
+.link-horario a:hover{
+    background-color: rgb(56, 128, 221);
 }
 
 /* seção contatos */
@@ -196,22 +204,23 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .secao-contato p{
     font-size: 19px;
     line-height: 25px;
     text-align: center;
-    min-width: 469px;
     margin: 20px auto;
 }
 
-article{
+.secao-mapa{
+    max-width: 1024pxpx;
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+}
+
+.secao-mapa iframe{
+    width: 100%;
 }
 
 
@@ -230,6 +239,5 @@ article{
     font-size: 19px;
     line-height: 25px;
     text-align: center;
-    min-width: 469px;
     margin: 20px auto;
 }
