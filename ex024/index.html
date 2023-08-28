@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header, footer{
+                background-color: rgb(31, 53, 255);
+                width: 100%;  
+                color: white;
+                padding: 10px 0 ;
+        }
+
+        .limite{
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+           
+        }
+
+        section{
+            background-color: white;
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+        }
+
+        h2{
+            text-align: center;
+            color: rgb(32, 32, 190);
+        }
+
+        form{
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 20px;
+        }
+
+        textarea , p{
+            width: 600px;
+            margin-top: 20px;
+            line-height: 20px;
+        }
+
+        button{
+            width: 600px;
+            padding: 10px 0;
+            color: white;
+            background-color: rgb(31, 53, 255);
+            
+            margin-top: 20px;
+            
+        }
+
+       footer{
+            
+            height: 50px;
+            margin-top: 30px ;
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CybeExpress</h1>
+    </header>
+
+    <main>
+        <section class="limite">
+            <h2>Caixa de sugestões</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi et hic quas molestias quos ullam vel autem voluptate, voluptatem magni esse dolore laboriosam quidem sint, ipsam repellendus beatae. Aspernatur, voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste minima quam ab esse explicabo asperiores, porro illo quos similique nisi non vero sed voluptatem autem laborum earum consequuntur. Quo!</p>
+            <form action="https://www.devmedia.com.br/codigos/formularios/aula2/">
+                <textarea name="sugestao" id="sugestoes" cols="30" rows="10">
+                    
+                </textarea>
+                <button type="submit">Enviar sugestão</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>Copyright - MeuCodigo 2023</span>
+    </footer>
+</body>
+
+</html>
