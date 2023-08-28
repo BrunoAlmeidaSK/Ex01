@@ -57,6 +57,7 @@ nav a:hover{
 /* config links especialidades */
 .links-especialidades {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     
