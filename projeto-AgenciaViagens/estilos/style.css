@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+/* configuração universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.secao-limite {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* seçao topo */
+.secao-topo {
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+    background-color: white;
+    
+    width: 100%;
+    height: 55px;
+    padding: 10px 0;
+   
+}
+
+.img-logo{
+    width: 35px;
+    margin-right: 8px ;
+}
+
+/* seção formulario */
+
+.secao-formulario{
+    width: 100%;
+    height: auto;
+    background: url('../imagens/bahia.jpg') no-repeat center;
+    background-size: cover;
+
+    padding: 50px 0;
+}
+
+
+
+.titulo-formulario{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: white;
+
+    padding: 5px;
+
+    width: 100%;
+    height: 35px;
+
+    
+}
+
+.img-logo-titulo{
+    width: 20px;
+    margin-right: 8px;
+    rotate: -45deg;
+}
+
+/* Formulario */
+.orcamento-area-formulario{
+    width: 100%;
+    background-color: white;
+    padding: 30px 25px 20px 25px;
+
+}
+
+.orcamento-area-formulario h2{
+    font-size: 22px;
+    padding: 0 0 24px 0px;
+}
+
+.form-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-principal label{
+    font-size: 16px;
+}
+
+.form-principal input, select{
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+
+.form-principal input{
+    padding: 0 5px
+}
+
+.form-principal select{
+    padding: 0 3px;
+}
+
+.formulario-campo-duplo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.formulario-campo-duplo div{
+    width: calc(50% - 10px);
+}
+
+.radio{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.radio div{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.radio input{
+    width: 15px;
+}
+
+.radio label{
+    margin: 0 0 0 8px;
+}
+
+/* configuração butão */
+
+button{
+    width: 160px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blueviolet;
+    color: rgba(255, 255, 255, 0.952);
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 12px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+/* configuração  seção imagens ofertas */
+
+/* -------------------------- */
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+.ofertas-descricao span {
+    font-weight: bold;
+}
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 20px);
+    margin: 0 6px;
+}
+
+.oferta-imagem-destaque img, .oferta-quatro-imagens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-quatro-imagens img , .oferta-imagem-destaque img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-imagem-destaque figcaption , .oferta-quatro-imagens figcaption{
+    position: absolute;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+     
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    color: #fff;
+
+    padding: 5px 10px;
+}
+
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.natureza-imagem {
+    width: calc(50% - 10px);
+    height: 100%;
+    
+}
+
+.natureza-imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.natureza-imagem div {
+    width: 100%;
+    padding:20px;
+    
+    box-sizing: border-box;
+    background: #f0f0f0;
+}
+
+.natureza-imagem h3 {
+    font-size: 16px;
+}
+
+.natureza-imagem p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+
+.rodape{
+    width: 100%;
+    background-color: blueviolet;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.secao-contatos{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    color: #fff;
+
+}
+
+.contato , .sociais{
+   
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contato div, .sociais div{
+    display: flex;
+    align-items: center;
+}
+
+.contato img , .sociais img{
+    width: 25px;
+    height: 25px;
+}
+
+
+.contato h3, .sociais h3{
+    padding: 10px 0;
+}
+
+.contato p , .sociais p{
+   padding: 10px;
+   font-size: 15px;
+}
+
+/* configuração media query */
+
+@media(max-width: 1100px)
+{ 
+    .secao-limite{
+        width: 90%;
+    }    
+}
+
+@media (max-width:768px) {
+
+    .orcamento-area-formulario button {
+        width: 100%;
+    }
+
+    .ofertas-imagens {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .oferta-quatro-imagens {
+        width: 100%;
+    }
+
+    .oferta-imagem-destaque, .oferta-quatro-imagens figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 0 0;
+    }
+
+    .natureza-duas-imagens {
+        flex-direction: column;
+    }
+
+    .natureza-imagem {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-conteudo
+    {
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px)
+{
+    .formulario-campo-duplo, .radio {
+        flex-direction: column;
+    }
+
+    .formulario-campo-duplo div, .radio div {
+        width: 100%;
+    }
+}
